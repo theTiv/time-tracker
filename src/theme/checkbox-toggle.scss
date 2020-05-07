@@ -1,0 +1,23 @@
+ion-item.item-checkbox, ion-item.item-radio {
+  --ion-item-border-color: transparent;
+
+  --min-height: 38px;
+
+  --padding-start: 8px;
+  --background: var(--ion-color-light);
+  background: var(--ion-color-light);
+  border: 1px solid var(--ion-color-card-border);
+  border-radius: 4px;
+
+  --placeholder-opacity: 0.33;
+
+  ion-checkbox {
+    margin: 0 0 0 32px;
+  }
+}
+
+body.dark {
+  ion-checkbox {
+    --border-color: inherit;
+  }
+}

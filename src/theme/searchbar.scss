@@ -1,0 +1,27 @@
+ion-searchbar[class*="sc-ion-searchbar"] {
+  --background: var(--ion-color-light);
+  background: var(--ion-color-light);
+  border: 1px solid var(--ion-color-card-border);
+  border-radius: 4px;
+  --placeholder-opacity: 0.33;
+  padding: 0 7px;
+  color: var(--ion-text-color);
+
+  div {
+    input.searchbar-input {
+      box-shadow: none;
+    }
+  }
+}
+
+ion-searchbar[class*="sc-ion-searchbar-ios"] {
+  height: 36px;
+  --background: transparent;
+}
+
+body.dark {
+  ion-searchbar[class*="sc-ion-searchbar"] {
+    --icon-color: white;
+    --clear-button-color: white;
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Statistics",
+  "empty": "No entries registered this week.",
+  "charts": {
+    "week": {
+      "title": "Current week hours entries."
+    }
+  }
+}

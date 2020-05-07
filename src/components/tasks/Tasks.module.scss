@@ -1,0 +1,17 @@
+.picker {
+  div:global(.MuiFormControl-root) {
+    display: none;
+  }
+}
+
+.action {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 8px 0;
+
+  ion-button:first-of-type {
+    margin-left: 0;
+  }
+}

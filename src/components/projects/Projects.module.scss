@@ -1,0 +1,32 @@
+.title {
+  margin-bottom: 0;
+}
+
+.projects {
+  flex: 1;
+  display: flex;
+  overflow: auto;
+    
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  > div {
+    display: flex;
+  }
+
+  &::after {
+    content: "";
+    border-left: 16px solid transparent;
+  }
+
+  ion-card {
+    min-width: 12rem;
+  }
+}
+
+.dummyProjectHeader {
+  ion-card-subtitle, ion-card-title {
+    text-transform: inherit;
+  }
+}

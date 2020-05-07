@@ -1,0 +1,41 @@
+.color {
+  padding: 8px 0;
+  --deckgo-button-more-border: 1px solid var(--ion-color-medium);
+}
+
+.projectItem {
+  cursor: pointer;
+
+  ion-label > * {
+    color: var(--ion-text-color);
+  }
+}
+
+.projectListTitle, .projectList, .clientList {
+  margin-bottom: 2px;
+}
+
+.projectListTitle {
+  margin-top: 8px;
+
+  &:global([class*="list"].inputs-list) {
+    ion-item {
+      &:global(.item-title) {
+        height: inherit;
+      }
+    }
+  }
+}
+
+.projectList {
+  &:global([class*="list"].inputs-list) {
+    background: var(--ion-color-light);
+    border: 1px solid var(--ion-color-card-border);
+    border-radius: 4px;
+
+    ion-item {
+      --padding-start: inherit;
+      --inner-padding-end: 8px;
+    }
+  }
+}

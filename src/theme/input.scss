@@ -1,0 +1,67 @@
+ion-item.item-input {
+  --border-color: transparent;
+  --highlight-color-focused: transparent;
+
+  &:not(.with-padding) {
+    --padding-start: 0;
+    --inner-padding-end: 0;
+  }
+
+  ion-input[class*="sc-ion-input"], ion-textarea[class*="sc-ion-textarea"], div.MuiFormControl-root, ion-select {
+    --padding-start: 8px;
+    --background: var(--ion-color-card);
+    background: var(--ion-color-light);
+    border: 1px solid var(--ion-color-card-border);
+    border-radius: 4px;
+
+    --placeholder-opacity: 0.33;
+  }
+
+  ion-select {
+    min-width: 100%;
+    padding-right: 16px;
+  }
+
+  div.MuiFormControl-root {
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+
+    div.MuiInputBase-root {
+      color: inherit;
+
+      &::before {
+        border: none;
+      }
+
+      &::after {
+        border-bottom: none;
+      }
+
+      input {
+        padding: 10px 8px;
+      }
+    }
+  }
+}
+
+ion-list[class*="list"].inputs-list  {
+  background: transparent;
+  contain: inherit;
+
+  ion-item {
+    --background: transparent;
+    --background-focused: transparent;
+
+    &.item-title {
+      height: 38px;
+      --border-color: transparent;
+
+      --padding-start: 0;
+      --inner-padding-end: 0;
+
+      font-weight: 300;
+    }
+  }
+}

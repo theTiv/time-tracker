@@ -1,0 +1,21 @@
+ion-tab-button {
+  --color-selected: var(--ion-color-danger);
+
+  .tab-selected {
+    ion-icon {
+      color: var(--ion-color-danger);
+    }
+  }
+}
+
+body.dark {
+  ion-tab-button {
+    --color-selected: var(--ion-color-button);
+
+    .tab-selected {
+      ion-icon {
+        color: var(--ion-color-button);
+      }
+    }
+  }
+}

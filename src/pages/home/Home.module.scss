@@ -1,0 +1,50 @@
+.addclient {
+  margin-top: 8px;
+
+  &:global(.md) {
+    margin: 4px 7px;
+  }
+}
+
+.toolbar {
+  background: transparent;
+  --background: transparent;
+
+  &:global(.ios) {
+    button {
+      height: 36px;
+    }
+  }
+
+  &:global(.md) {
+    button {
+      height: 42px;
+
+      ion-icon {
+        padding: 0 16px;
+      }
+    }
+  }
+
+  button {
+    color: var(--ion-color-medium);
+  }
+
+}
+
+.start {
+  border-radius: 24px;
+  animation: startAnimation 2.0s linear infinite;
+}
+
+@keyframes startAnimation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 119, 97, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 119, 97, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 119, 97, 0);
+  }
+}
