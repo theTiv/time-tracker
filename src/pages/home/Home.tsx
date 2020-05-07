@@ -76,7 +76,7 @@ const Home: React.FC<RouteComponentProps> = (props) => {
   return (
     <IonPage>
       <IonContent>
-
+       <main className="ion-padding-start ion-padding-bottom ion-padding-top">
         <Header></Header>
 
         <IonModal isOpen={showModalClient} onDidDismiss={async () => await closeClientModal()} cssClass="fullscreen">
@@ -91,7 +91,6 @@ const Home: React.FC<RouteComponentProps> = (props) => {
           <CreateTaskModal closeAction={() => setShowModalTask(false)}></CreateTaskModal>
         </IonModal>
 
-        <main className="ion-padding-start ion-padding-bottom ion-padding-top">
           <IonHeader className="ion-padding-end">
             <IonToolbar className={styles.toolbar}>
               <button aria-label={t('search.clients')} className={styles.searchbar + ' input'} onClick={() => setShowModalClients(true)}>

@@ -24,9 +24,9 @@ class Header extends React.Component<HeaderProps> {
                 <IonTitle>
                     <div className={styles.title}>
                         <div>
-                            <img src="/assets/icon/VibeLogo.png" alt={t('header.logo')} height="18"/>
+                            <img src="/assets/icon/VibeLogo.png" alt={t('header.logo')}/>
                         </div>
-                        <span>Tie Tracker</span>
+                        <span>Time Tracker</span>
                     </div>
                 </IonTitle>
             </IonToolbar>
